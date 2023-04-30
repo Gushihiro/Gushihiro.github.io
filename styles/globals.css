@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+}
+
+body {
+  background-color: #1F2125;
+}
+
+.hero-img {
+  border-radius: 10px;
+}
+
+.g-heading {
+  color: #7ECB7C;
+  font-style: normal;
+  font-size: 85px;
+  line-height: 121px;
+}
+
+.sub-heading {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 50px;
+  color: #9ABFEA;
+}
+
+.nav-heading {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 50px;
+  color: #EDE490;
+}
+
+.nav-link {
+  display: inline-flex;
+  padding-top: 3vh;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #EDE490;
+}
+
+.link-container {
+  padding-left: 2vw;
+}
+
+.link-box {
+  display: inline-flex;
+  flex-direction: column;
+  justify-self: end;
+}
+
+.small-divider {
+  height: 1px;
+  width: 500px;
+  background-color: gray;
+}
+
+.project-section {
+  margin-top: 30vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+}
+
+.project-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+}
+
+.project-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.link-img {
+  display: flex;
+  justify-content: end;
+}
