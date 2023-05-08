@@ -21,8 +21,8 @@ export default function Page() {
         <MainHero />
       </section>
       <section className="flex flex-col project-section">
-        <h2 className={`${sourceCodePro.className} text-3xl sub-heading mb-7 nav-heading`}>// Projects</h2>
-        <div className="flex flex-col">
+        <h2 className={`${sourceCodePro.className} text-3xl sub-heading mb-9 nav-heading`}>// Projects</h2>
+        <div className="flex flex-col mt-9">
           <div className="flex justify-evenly">
             <div className="project-block" id="projects">
               <Link href="/vedomy">

@@ -12,8 +12,33 @@ body {
   color: white;
 }
 
+.main-hero {
+  margin-top: 15vh;
+}
+
+.custom-divider {
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+}
+
 .hero-img {
+  position: absolute;
   border-radius: 10px;
+  z-index: 20;
+}
+
+.hero-img-box {
+  position: relative;
+}
+
+.hero-circle {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background-color: gray;
+  border-radius: 75%;
+  left: 10%;
+  top: 5%;
 }
 
 .g-heading {
@@ -66,22 +91,24 @@ body {
   margin-top: 30vh;
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-bottom: 10vh;
 
 }
 
 .project-block {
+  padding-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 250px;
-  height: 250px;
+  width: 25vw;
+  height: 30vh;
 }
 
 .project-img {
-  width: 200px;
-  height: 200px;
+  width: 25vw;
+  height: 35vh;
   border-radius: 10px;
   background-color: black;
 }
