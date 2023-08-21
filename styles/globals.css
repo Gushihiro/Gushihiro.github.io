@@ -68,8 +68,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #EDE490;
-  border: 1px solid #EDE490;
-  border-radius: 9999px;
+  /* border: 1px solid #EDE490;
+  border-radius: 9999px; */
   padding: .5rem 1rem;
   margin-top: 1rem;
 }
