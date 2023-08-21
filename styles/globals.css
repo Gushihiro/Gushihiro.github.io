@@ -64,11 +64,20 @@ body {
 
 .nav-link {
   display: inline-flex;
-  padding-top: 3vh;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #EDE490;
+  border: 1px solid #EDE490;
+  border-radius: 9999px;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+}
+
+.nav-link:hover {
+  color:#9e6ed4;
+  transition-duration: .5s;
+  border-color: #9e6ed4;
 }
 
 .link-container {
