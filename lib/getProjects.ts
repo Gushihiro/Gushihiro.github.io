@@ -14,7 +14,7 @@ export const getProjects = cache((): Project[] => [
   {
     name: 'Vedomy',
     slug: 'vedomy',
-    description: 'Tempalte'
+    description: 'Template'
   },
   {
     name: 'Pong',
