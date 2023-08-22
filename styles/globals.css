@@ -43,16 +43,26 @@ body {
   color: #7ECB7C;
   font-style: normal;
   font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .project-sub-heading {
+  display: flex;
+  align-items: center;
   color: #9ABFEA;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; 
   white-space: nowrap;
 }
 
 .project-sub-text {
   color: #EDE490;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
 }
 
 .sub-heading {

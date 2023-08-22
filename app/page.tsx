@@ -13,6 +13,10 @@ const sourceSansPro = Source_Sans_Pro({
   weight: ['400']
 })
 
+const circleSpacer = <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+</svg> 
+
 export default function Page() {
 
   return (
@@ -23,18 +27,35 @@ export default function Page() {
       <section className="flex flex-col project-section" id="projects">
         <h2 className={`${sourceCodePro.className} text-3xl sub-heading mt-5 nav-heading`}>// Projects</h2>
         <div className="flex flex-col">
-          <div className="flex justify-evenly">
+          <div className="flex justify-between">
             <div className="project-block" >
               <Link href="https://gushihiro.github.io/Vedomy" target="_blank">
                 <img className="project-img" src="/vedomyView.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
-                <h4 className={`${sourceCodePro.className} project-sub-heading`}>MySQL|Express|JavaScript|NodeJS</h4>
+                <h4 className={`${sourceCodePro.className} project-sub-heading`}>
+                  MySQL&nbsp;
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+                  </svg>
+                  &nbsp;Express&nbsp;
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+                  </svg> 
+                  &nbsp;JavaScript&nbsp;
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+                  </svg> 
+                  &nbsp;NodeJS&nbsp;
+                </h4>
                 <h4 className={`${sourceSansPro.className} text-xl text-start mt-4`}>
                   A Meditation App with Personal Wellness Tracking Applicability
                   Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and motivational quotes daily.
                 </h4>
                 <h4 className="project-sub-text text-start mt-5">
-                  Additional Technologies: MomentJS jQuery Bootstrap Materialize
+                  Additional Technologies:
+                </h4>
+                <h4 className="project-sub-text text-start ml-9">
+                  MomentJS jQuery Bootstrap Materialize
                 </h4>
               </Link>
             </div>
@@ -48,12 +69,29 @@ export default function Page() {
               <Link href="https://gushihiro.github.io/contacts-crud/" target="_blank">
                 <img className="project-img" src="/contactCrudSS.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
-                <h4 className={`${sourceCodePro.className} project-sub-heading`}>MySQL|Express|JavaScript|NodeJS</h4>
+                <h4 className={`${sourceCodePro.className} project-sub-heading`}>
+                  MySQL&nbsp;
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+                  </svg> 
+                  &nbsp;Express&nbsp;
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+                  </svg> 
+                  &nbsp;JavaScript&nbsp;
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+                  </svg> 
+                  &nbsp;NodeJS&nbsp;
+                </h4>
                 <h4 className={`${sourceSansPro.className} text-xl text-start mt-4`}>
                   Simple, fully functioning CRUD Application Utilizing Axios-Imported API Contacts
                   Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and motivational quotes daily.
                 </h4>
-                <h4 className="project-sub-text text-start mt-5">Additional Technologies: Material-Ui TypeScript Axios</h4>
+                <h4 className="project-sub-text text-start mt-5">Additional Technologies:</h4>
+                <h4 className="project-sub-text text-start ml-9">
+                  Material-Ui TypeScript Axios
+                </h4>
               </Link>
             </div>
           </div>
