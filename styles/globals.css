@@ -31,21 +31,28 @@ body {
   position: relative;
 }
 
-.hero-circle {
-  position: absolute;
-  width: 30vw;
-  height: 30vw;
-  background-color: gray;
-  border-radius: 75%;
-  left: 10%;
-  top: 5%;
-}
-
 .g-heading {
   color: #7ECB7C;
   font-style: normal;
-  font-size: 85px;
+  font-size: 100px;
   line-height: 121px;
+  white-space: nowrap;
+}
+
+.project-heading {
+  color: #7ECB7C;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.project-sub-heading {
+  color: #9ABFEA;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.project-sub-text {
+  color: #EDE490;
 }
 
 .sub-heading {
@@ -112,7 +119,7 @@ body {
   align-items: center;
   text-align: center;
   width: 25vw;
-  height: 30vh;
+  min-height: 30vh;
 }
 
 .project-img {
