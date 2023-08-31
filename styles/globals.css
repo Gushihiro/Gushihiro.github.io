@@ -37,6 +37,7 @@ body {
   font-size: 100px;
   line-height: 121px;
   white-space: nowrap;
+  align-self: flex-end;
 }
 
 .project-heading {
@@ -98,7 +99,10 @@ body {
 }
 
 .link-container {
+  display: flex;
+  align-items: flex-end;
   padding-left: 2vw;
+  min-height: 16rem;
 }
 
 .link-box {
