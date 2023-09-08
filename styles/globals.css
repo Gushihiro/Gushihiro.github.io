@@ -31,6 +31,11 @@ body {
   position: relative;
 }
 
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .g-heading {
   color: #7ECB7C;
   font-style: normal;
@@ -146,4 +151,26 @@ body {
 .link-img {
   display: flex;
   justify-content: end;
+}
+
+@media screen and (max-width: 600px) {
+
+  .g-heading {
+    font-style: normal;
+    font-size: 60px;
+    line-height: normal;
+    white-space: nowrap;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .link-box {
+    flex-direction: row;
+  }
+
+  .link-container {
+    align-items: center;
+  }
 }
