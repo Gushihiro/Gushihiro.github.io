@@ -1,5 +1,6 @@
 import { Card } from "../_shared/Card";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Source_Code_Pro } from '@next/font/google'
 
 const sourceCodePro = Source_Code_Pro({
@@ -16,10 +17,22 @@ export default function MainHero() {
         <img className="hero-img" src={"/portfolio-headerimg.png"} alt={"Hiroto"}/>
       </figure>
       <div className="inline-flex flex-col w-6/12 justify-between">
-        <div className="flex flex-col">
-          <h1 className={`${sourceCodePro.className} text-6xl g-heading`}>Hiroto Robinson</h1>
+        <div className="hero-text-box">
+          <motion.h1
+            className={`${sourceCodePro.className} text-6xl g-heading`}
+            initial={{opacity: 0}}
+            style={{x: 100}}
+            animate={{opacity: 1, x: 0}}
+            transition={{duration: 1.25}}
+          >Hello, I'm Hiroto Robinson</motion.h1>
           <div className="custom-divider small-divider self-end"></div>
-          <h2 className={`${sourceCodePro.className} text-3xl sub-heading self-end`}>Software Engineer</h2>
+          <motion.h2
+            className={`${sourceCodePro.className} text-3xl sub-heading self-end`}
+            initial={{opacity: 0}}
+            style={{y: -50}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: .5, duration: 1}}
+          >Software Engineer</motion.h2>
           <div className="w-10/12 self-end mt-9 text-right">
             Over 2 years of experience in Web Stacks involving Javascript, Typescript, 
             React, & NodeJS. Experienced in AGILE team environments collaborating to deliver custom ecommerce platforms to automate online business management and transactions.
