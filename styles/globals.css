@@ -21,11 +21,11 @@ body {
   margin-bottom: 4vh;
 }
 
-.hero-img {
-  position: absolute;
-  border-radius: 10px;
-  z-index: 20;
-}
+/*.hero-img {*/
+/*  position: absolute;*/
+/*  border-radius: 10px;*/
+/*  z-index: 20;*/
+/*}*/
 
 .hero-img-box {
   position: relative;
@@ -39,7 +39,7 @@ body {
 .g-heading {
   color: #7ECB7C;
   font-style: normal;
-  font-size: 100px;
+  font-size: clamp(1.5rem, 9vw, 6rem);
   line-height: 121px;
   white-space: nowrap;
   align-self: flex-end;
@@ -50,6 +50,7 @@ body {
   font-style: normal;
   font-size: 2.5rem;
   font-weight: 600;
+  margin: 1rem 0;
 }
 
 .project-sub-heading {
@@ -73,7 +74,7 @@ body {
 
 .sub-heading {
   font-style: normal;
-  font-size: 40px;
+  font-size: clamp(1.5rem, 8vw, 4rem);
   line-height: 50px;
   color: #9ABFEA;
 }
@@ -152,14 +153,28 @@ body {
   justify-content: end;
 }
 
+@media screen and (max-width: 420px) {
+  /*.g-heading {*/
+  /*  font-style: normal;*/
+  /*  font-size: 24px;*/
+  /*  line-height: normal;*/
+  /*  white-space: normal;*/
+  /*  align-self: center;*/
+  /*}*/
+}
+
 @media screen and (max-width: 600px) {
 
   .g-heading {
     font-style: normal;
-    font-size: 60px;
     line-height: normal;
-    white-space: nowrap;
+    white-space: normal;
     align-self: center;
+  }
+
+  .main-hero {
+    margin-top: 15vh;
+    text-align: center;
   }
 }
 
