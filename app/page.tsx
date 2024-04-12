@@ -36,10 +36,10 @@ export default function Page() {
       >
         <h2 className={`${sourceCodePro.className} text-3xl sub-heading mt-5 nav-heading`}>// Projects</h2>
         <div className="flex flex-col">
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row items-center md:justify-between">
             <div className="project-block">
-              <Link href="https://gushihiro.github.io/Vedomy" target="_blank">
-                <img className="project-img" src="/vedomyView.png" alt="project"/>
+              <Link className="flex flex-col" href="https://gushihiro.github.io/Vedomy" target="_blank">
+                <img className="project-img self-center" src="/vedomyView.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
@@ -74,9 +74,9 @@ export default function Page() {
                 <h4>Pong</h4>
               </Link>
             </div> */}
-            <div className="project-block">
-              <Link href="https://gushihiro.github.io/contacts-crud/" target="_blank">
-                <img className="project-img" src="/contactCrudSS.png" alt="project"/>
+            <div className="project-block flex flex-col md:flex-row">
+              <Link className="flex flex-col" href="https://gushihiro.github.io/contacts-crud/" target="_blank">
+                <img className="project-img self-center" src="/contactCrudSS.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
