@@ -18,14 +18,24 @@ export default function MainHero() {
   return (
     <div className="flex flex-col justify-center main-hero">
       <motion.div>
-        <motion.h1
-            className={`${sourceCodePro.className} text-6xl g-heading`}
-            initial={{opacity: 0}}
-            style={{x: 100}}
-            animate={{opacity: 1, x: 0}}
-            transition={{duration: 1.25}}
-        >Hello, I'm Hiroto Robinson
-        </motion.h1>
+        <motion.div className={'flex flex-col md:flex-row'}>
+          <motion.h1
+              className={`${sourceCodePro.className} text-6xl g-heading`}
+              initial={{opacity: 0}}
+              style={{x: 100}}
+              animate={{opacity: 1, x: 0}}
+              transition={{duration: 1.25}}
+          >Hello,
+          </motion.h1>
+          <motion.h1
+              className={`${sourceCodePro.className} text-6xl g-heading`}
+              initial={{opacity: 0}}
+              style={{x: 100}}
+              animate={{opacity: 1, x: 0}}
+              transition={{duration: 1.25}}
+          > I'm Hiroto Robinson
+          </motion.h1>
+        </motion.div>
         <div className="custom-divider small-divider self-end"></div>
         <motion.h2
             className={`${sourceCodePro.className} text-3xl sub-heading self-end`}
@@ -36,18 +46,18 @@ export default function MainHero() {
         >Software Engineer
         </motion.h2>
       </motion.div>
-      <div className={'flex flex-col md:flex-row'}>
-          {/* <div className="hero-circle"></div> */}
+      <div className={'flex flex-col sm:items-center md:flex-row'}>
+        {/* <div className="hero-circle"></div> */}
         <Image
-            className="relative"
+            className="relative rounded-full md:rounded-none"
             src={"/portfolio-headerimg.png"}
             width={500} height={550}
-            sizes="(max-width: 768px) 90vw, (max-width: 1280px) 50vw, 33vw"
+            sizes="(max-width: 768px) 50vw, (max-width: 1280px) 50vw, 33vw"
             alt={"Hiroto"}
         />
         <div className="inline-flex flex-col sm:w-full lg:w-6/12 justify-between">
           <motion.div className="hero-text-box">
-            <div className="w-10/12 self-end mt-9 text-right">
+            <div className="w-10/12 self-center md:self-end mt-9 md:text-right">
               Over 3 years of experience in Web Stacks involving Javascript, Typescript,
               React, & NodeJS. Experienced in AGILE team environments collaborating to deliver custom ecommerce platforms to automate online business management and transactions.
               Quick thinking, communicative, and always learning. I strive to improve myself each day and hold accountability for the code I push.
