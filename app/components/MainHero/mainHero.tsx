@@ -57,7 +57,7 @@ export default function MainHero() {
         />
         <div className="inline-flex flex-col sm:w-full lg:w-6/12 justify-between">
           <motion.div className="hero-text-box">
-            <div className="w-10/12 self-center md:self-end mt-9 md:text-right">
+            <div className="w-8/12 md:w-10/12 self-center md:self-end mt-9 md:text-right">
               Over 3 years of experience in Web Stacks involving Javascript, Typescript,
               React, & NodeJS. Experienced in AGILE team environments collaborating to deliver custom ecommerce platforms to automate online business management and transactions.
               Quick thinking, communicative, and always learning. I strive to improve myself each day and hold accountability for the code I push.
