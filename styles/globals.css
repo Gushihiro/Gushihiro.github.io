@@ -57,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   color: #9ABFEA;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal; 
@@ -180,6 +180,14 @@ body {
   .project-img {
     width: 80vw;
     height: 35vh;
+  }
+
+  .project-sub-text {
+    font-size: .8rem;
+  }
+
+  .spacer-dot {
+    display: none;
   }
 }
 

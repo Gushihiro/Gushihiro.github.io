@@ -34,7 +34,7 @@ export default function Page() {
         animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 200}}
         transition={{duration: 1.25, delay: .1}}
       >
-        <h2 className={`${sourceCodePro.className} text-3xl sub-heading mt-5 nav-heading`}>// Projects</h2>
+        <h2 className={`${sourceCodePro.className} mt-1 text-3xl sub-heading md:mt-5 nav-heading`}>// Projects</h2>
         <div className="flex flex-col">
           <div className="flex flex-col md:flex-row items-center md:justify-between">
             <div className="project-block">
@@ -43,27 +43,27 @@ export default function Page() {
                 <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
                   </svg>
                   &nbsp;Express&nbsp;
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
                   </svg> 
                   &nbsp;JavaScript&nbsp;
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
                   </svg> 
                   &nbsp;NodeJS&nbsp;
                 </h4>
-                <h4 className={`${sourceSansPro.className} text-xl text-start mt-4`}>
+                <h4 className={`${sourceSansPro.className} text-sm text-center md:text-xl md:text-start mt-4`}>
                   A Meditation App with Personal Wellness Tracking Applicability
                   Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and motivational quotes daily.
                 </h4>
-                <h4 className="project-sub-text text-start mt-5">
+                <h4 className="project-sub-text text-center md:text-start mt-5">
                   Additional Technologies:
                 </h4>
-                <h4 className="project-sub-text text-start ml-9">
+                <h4 className="project-sub-text text-center ml-0 md:text-start md:ml-9">
                   MomentJS jQuery Bootstrap Materialize
                 </h4>
               </Link>
@@ -80,25 +80,25 @@ export default function Page() {
                 <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
                   </svg> 
                   &nbsp;Express&nbsp;
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
                   </svg> 
                   &nbsp;JavaScript&nbsp;
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
                   </svg> 
                   &nbsp;NodeJS&nbsp;
                 </h4>
-                <h4 className={`${sourceSansPro.className} text-xl text-start mt-4`}>
+                <h4 className={`${sourceSansPro.className} text-sm text-center md:text-xl md:text-start mt-4`}>
                   Simple, fully functioning CRUD Application Utilizing Axios-Imported API Contacts
                   Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and motivational quotes daily.
                 </h4>
-                <h4 className="project-sub-text text-start mt-5">Additional Technologies:</h4>
-                <h4 className="project-sub-text text-start ml-9">
+                <h4 className="project-sub-text text-center md:text-start mt-5">Additional Technologies:</h4>
+                <h4 className="project-sub-text text-center ml-0 md:text-start md:ml-9">
                   Material-Ui TypeScript Axios
                 </h4>
               </Link>
