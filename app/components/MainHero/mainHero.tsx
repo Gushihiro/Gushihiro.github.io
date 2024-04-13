@@ -4,6 +4,7 @@ import { motion, useScroll, useInView } from "framer-motion";
 import { Source_Code_Pro } from '@next/font/google'
 import { useRef } from "react";
 import Image from 'next/image';
+import Hamburger from "../Hamburger/hamburger";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -17,6 +18,7 @@ export default function MainHero() {
   
   return (
     <div className="flex flex-col justify-center main-hero">
+      <Hamburger />
       <motion.div>
         <motion.div className={'flex flex-col md:flex-row'}>
           <motion.h1
@@ -63,7 +65,7 @@ export default function MainHero() {
               Quick thinking, communicative, and always learning. I strive to improve myself each day and hold accountability for the code I push.
             </div>
           </motion.div>
-          <div className="link-container mt-6">
+          <div className="link-container mt-6 w-7/12">
             <div className="link-box">
               <a className={`nav-link ${sourceCodePro.className}`} href="#projects">
                 // Projects
