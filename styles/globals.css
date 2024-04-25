@@ -153,6 +153,10 @@ body {
   justify-content: end;
 }
 
+.main-footer {
+  background-color: #2B2E33;
+}
+
 @media screen and (max-width: 420px) {
   /*.g-heading {*/
   /*  font-style: normal;*/
@@ -187,6 +191,9 @@ body {
   }
 
   .spacer-dot {
+    display: none;
+  }
+  .link-container {
     display: none;
   }
 }

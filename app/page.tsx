@@ -39,8 +39,8 @@ export default function Page() {
           <div className="flex flex-col md:flex-row items-center md:justify-between">
             <div className="project-block">
               <Link className="flex flex-col" href="https://gushihiro.github.io/Vedomy" target="_blank">
-                <img className="project-img self-center" src="/vedomyView.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
+                <img className="project-img self-center mb-3" src="/vedomyView.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
                   <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,8 +76,8 @@ export default function Page() {
             </div> */}
             <div className="project-block flex flex-col md:flex-row">
               <Link className="flex flex-col" href="https://gushihiro.github.io/contacts-crud/" target="_blank">
-                <img className="project-img self-center" src="/contactCrudSS.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
+                <img className="project-img self-center mb-3" src="/contactCrudSS.png" alt="project"/>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
                   <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">

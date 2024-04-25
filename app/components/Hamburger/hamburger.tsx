@@ -1,10 +1,21 @@
 import { useState } from "react";
+import { Source_Code_Pro } from '@next/font/google'
 
+const sourceCodePro = Source_Code_Pro({
+    subsets: ['latin'],
+    weight: ['500']
+})
 export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
+    const isOpen = () => {
+        if (isNavOpen) {
+
+        }
+    }
+
     return (
-        <div className="flex items-center justify-start py-8 px-8 md:hidden">
+        <div className="flex items-center justify-start self-center py-8 px-8 md:hidden w-10/12">
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden">
                     <div
@@ -35,30 +46,23 @@ export default function Header() {
                             </svg>
                         </div>
                         <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                            <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/about">About</a>
-                            </li>
-                            <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/portfolio">Portfolio</a>
-                            </li>
-                            <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/contact">Contact</a>
-                            </li>
+                            <a className={`nav-link ${sourceCodePro.className}`} href="#projects">
+                                // Projects
+                            </a>
+                            <a className={`nav-link ${sourceCodePro.className}`}
+                               href="https://linkedin.com/in/robinsonhiroto" target="_blank">
+                                <span>// LinkedIn</span>
+                            </a>
+                            <a className={`nav-link ${sourceCodePro.className}`} href="https://github.com/Gushihiro"
+                               target="_blank">
+                                <span>// GitHub</span>
+                            </a>
+                            <a className={`nav-link ${sourceCodePro.className}`} href="/resume.pdf" target="_blank">
+                                <span>// Resume</span>
+                            </a>
                         </ul>
                     </div>
                 </section>
-
-                <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
             </nav>
             <style>{`
       .hideMenuNav {
@@ -71,7 +75,7 @@ export default function Header() {
         height: 100vh;
         top: 0;
         left: 0;
-        background: white;
+        background: black;
         z-index: 10;
         display: flex;
         flex-direction: column;
