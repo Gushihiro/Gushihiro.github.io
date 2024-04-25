@@ -128,7 +128,6 @@ body {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-bottom: 10vh;
-
 }
 
 .project-block {
@@ -193,8 +192,13 @@ body {
   .spacer-dot {
     display: none;
   }
+
   .link-container {
     display: none;
+  }
+
+  .project-section {
+    margin-top: 15vh;
   }
 }
 

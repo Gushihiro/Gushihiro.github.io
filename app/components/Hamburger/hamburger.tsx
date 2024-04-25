@@ -8,19 +8,18 @@ const sourceCodePro = Source_Code_Pro({
 export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const isOpen = () => {
-        if (isNavOpen) {
-
-        }
+    const isOpen = (bool: boolean) => {
+        setIsNavOpen(bool);
+        !isNavOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
     }
 
     return (
         <div className="flex items-center justify-start self-center py-8 px-8 md:hidden w-10/12">
             <nav>
-                <section className="MOBILE-MENU flex lg:hidden">
+                <section className="MOBILE-MENU flex lg:hidden ">
                     <div
-                        className="HAMBURGER-ICON space-y-2"
-                        onClick={() => setIsNavOpen((prev) => !prev)}
+                        className="HAMBURGER-ICON space-y-2 fixed"
+                        onClick={() => isOpen(!isNavOpen)}
                     >
                         <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                         <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -30,7 +29,7 @@ export default function Header() {
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                         <div
                             className="absolute top-0 right-0 px-8 py-8"
-                            onClick={() => setIsNavOpen(false)}
+                            onClick={() => isOpen(false)}
                         >
                             <svg
                                 className="h-8 w-8 text-gray-600"
@@ -46,7 +45,7 @@ export default function Header() {
                             </svg>
                         </div>
                         <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                            <a className={`nav-link ${sourceCodePro.className}`} href="#projects">
+                            <a className={`nav-link ${sourceCodePro.className}`} onClick={() => isOpen(false)} href="#projects">
                                 // Projects
                             </a>
                             <a className={`nav-link ${sourceCodePro.className}`}
@@ -70,11 +69,13 @@ export default function Header() {
       }
       .showMenuNav {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         background: black;
         z-index: 10;
         display: flex;

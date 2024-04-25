@@ -28,19 +28,19 @@ export default function Page() {
       <section id="home" className="flex flex-col items-center justify-center">
         <MainHero />
       </section>
-      <motion.section className="flex flex-col project-section" id="projects"
+      <motion.section className="flex flex-col project-section"
         ref={ref}
         initial={false}
         animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 200}}
         transition={{duration: 1.25, delay: .1}}
       >
-        <h2 className={`${sourceCodePro.className} mt-1 text-3xl sub-heading md:mt-5 nav-heading`}>// Projects</h2>
+        <h2 className={`${sourceCodePro.className} mt-1 text-3xl sub-heading md:mt-5 nav-heading`} id="projects">// Projects</h2>
         <div className="flex flex-col">
           <div className="flex flex-col md:flex-row items-center md:justify-between">
             <div className="project-block">
               <Link className="flex flex-col" href="https://gushihiro.github.io/Vedomy" target="_blank">
-                <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
                 <img className="project-img self-center mb-3" src="/vedomyView.png" alt="project"/>
+                <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
                   <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,8 +76,8 @@ export default function Page() {
             </div> */}
             <div className="project-block flex flex-col md:flex-row">
               <Link className="flex flex-col" href="https://gushihiro.github.io/contacts-crud/" target="_blank">
-                <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
                 <img className="project-img self-center mb-3" src="/contactCrudSS.png" alt="project"/>
+                <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
                 <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                   MySQL&nbsp;
                   <svg className={'spacer-dot'} width="5" height="5" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
