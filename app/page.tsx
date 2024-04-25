@@ -31,7 +31,7 @@ export default function Page() {
       <motion.section className="flex flex-col project-section"
         ref={ref}
         initial={false}
-        animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 200}}
+        animate={isInView ? {opacity: 1, x: 0} : {opacity: 0, y: 50}}
         transition={{duration: 1.25, delay: .1}}
       >
         <h2 className={`${sourceCodePro.className} mt-1 text-3xl sub-heading md:mt-5 nav-heading`} id="projects">// Projects</h2>

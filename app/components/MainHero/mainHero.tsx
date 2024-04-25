@@ -19,7 +19,7 @@ export default function MainHero() {
   return (
     <div className="flex flex-col justify-center main-hero">
       <Hamburger />
-      <motion.div>
+      <motion.div className={''}>
         <motion.div className={'flex flex-col md:flex-row'}>
           <motion.h1
               className={`${sourceCodePro.className} text-6xl g-heading`}
