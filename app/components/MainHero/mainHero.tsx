@@ -1,16 +1,25 @@
 import { Card } from "../_shared/Card";
 import Link from "next/link";
 import { motion, useScroll, useInView } from "framer-motion";
-import { Source_Code_Pro } from '@next/font/google'
+import { Source_Code_Pro, Montserrat, IBM_Plex_Sans } from '@next/font/google'
 import { useRef } from "react";
 import Image from 'next/image';
 import Hamburger from "../Hamburger/hamburger";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
-  weight: ['600']
+  weight: ['400']
 })
 
+const montserrat = Montserrat({
+  weight: ['500'],
+  subsets: ['latin']
+})
+
+const ibmPlexSans = IBM_Plex_Sans({
+  weight: ['400'],
+  subsets: ['latin']
+})
 
 export default function MainHero() {
   const ref = useRef(null);
@@ -22,7 +31,7 @@ export default function MainHero() {
       <motion.div className={''}>
         <motion.div className={'flex flex-col md:flex-row'}>
           <motion.h1
-              className={`${sourceCodePro.className} text-6xl g-heading`}
+              className={`${montserrat.className} text-6xl g-heading`}
               initial={{opacity: 0}}
               style={{x: 100}}
               animate={{opacity: 1, x: 0}}
@@ -30,7 +39,7 @@ export default function MainHero() {
           >Hello,
           </motion.h1>
           <motion.h1
-              className={`${sourceCodePro.className} text-6xl g-heading`}
+              className={`${montserrat.className} text-6xl g-heading`}
               initial={{opacity: 0}}
               style={{x: 100}}
               animate={{opacity: 1, x: 0}}
@@ -40,7 +49,7 @@ export default function MainHero() {
         </motion.div>
         <div className="custom-divider small-divider self-end"></div>
         <motion.h2
-            className={`${sourceCodePro.className} text-3xl sub-heading self-end`}
+            className={`${montserrat.className} text-3xl sub-heading self-end`}
             initial={{opacity: 0}}
             style={{y: -50}}
             animate={{opacity: 1, y: 0}}
