@@ -18,12 +18,12 @@ export default function Header() {
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden ">
                     <div
-                        className="HAMBURGER-ICON space-y-2 cursor-pointer"
+                        className="HAMBURGER-ICON space-y-1 cursor-pointer"
                         onClick={() => isOpen(!isNavOpen)}
                     >
-                        <span className="block h-0.5 w-8 bg-yellow-200"></span>
-                        <span className="block h-0.5 w-8 bg-yellow-200"></span>
-                        <span className="block h-0.5 w-8 bg-yellow-200"></span>
+                        <span className="block h-0.5 w-5 bg-yellow-200"></span>
+                        <span className="block h-0.5 w-5 bg-yellow-200"></span>
+                        <span className="block h-0.5 w-5 bg-yellow-200"></span>
                     </div>
 
                     <div className={isNavOpen ? "showMenuNav z-10" : "hideMenuNav"}>
@@ -32,7 +32,7 @@ export default function Header() {
                             onClick={() => isOpen(false)}
                         >
                             <svg
-                                className="h-8 w-8 text-gray-600"
+                                className="h-8 w-8 text-yellow-200"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"

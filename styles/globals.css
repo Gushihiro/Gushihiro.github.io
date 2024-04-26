@@ -13,7 +13,7 @@ body {
 }
 
 .main-hero {
-  margin-top: 15vh;
+  margin-top: 5vh;
   width: 100vw;
 }
 
@@ -64,16 +64,17 @@ body {
 .project-heading {
   color: #7ECB7C;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 600;
   margin: 1rem 0;
+  text-align: start;
 }
 
 .project-sub-heading {
   display: flex;
   align-items: center;
   color: #9ABFEA;
-  font-size: clamp(1rem, 4.5vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.3rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal; 
@@ -96,6 +97,15 @@ body {
   width: 50%;
   align-self: flex-end;
   text-align: end;
+}
+
+.section-heading {
+  font-style: normal;
+  font-size: clamp(1.5rem, 9vw, 6rem);
+  line-height: 2vh;
+  color: #9ABFEA;
+  width: 50%;
+  white-space: nowrap;
 }
 
 .mobile-nav {
@@ -148,25 +158,29 @@ body {
 }
 
 .project-section {
-  margin-top: 30vh;
+  margin-top: 15vh;
   margin-left: 5vw;
   margin-right: 5vw;
   margin-bottom: 10vh;
 }
 
 .project-block {
-  padding-top: 5vh;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  justify-content: center;
   text-align: center;
-  width: 25vw;
-  min-height: 30vh;
+  width: 80vw;
+  min-height: 60vh;
+  border-radius: 10px;
+  background-color: #2B2E33;
 }
 
 .project-img {
-  width: 30vw;
-  height: 60vh;
+  width: 20vw;
+  height: 15vw;
   border-radius: 10px;
   background-color: black;
 }
