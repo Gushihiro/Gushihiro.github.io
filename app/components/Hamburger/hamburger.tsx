@@ -10,7 +10,7 @@ export default function Header() {
 
     const isOpen = (bool: boolean) => {
         setIsNavOpen(bool);
-        !isNavOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
+        !isNavOpen ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'unset';
     }
 
     return (
