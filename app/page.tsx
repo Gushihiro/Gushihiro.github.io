@@ -38,9 +38,9 @@ export default function Page() {
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-between">
             <div className="project-block my-20">
-              <Link className="flex flex-row justify-center" href="https://gushihiro.github.io/Vedomy" target="_blank">
+              <Link className="flex flex-col items-center md:flex-row justify-center" href="https://gushihiro.github.io/Vedomy" target="_blank">
                 <img className="project-img self-center" src="/vedomyView.png" alt="project"/>
-                <div className={'flex flex-col w-4/12 md:pl-20'}>
+                <div className={'flex flex-col w-10/12 md:w-4/12 md:pl-20'}>
                   <h4 className={`${sourceCodePro.className} project-heading`}>Vedomy</h4>
                   <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                     MySQL&nbsp;
@@ -57,7 +57,7 @@ export default function Page() {
                     </svg>
                     &nbsp;NodeJS&nbsp;
                   </h4>
-                  <h4 className={`${sourceSansPro.className} text-md text-center md:text-start mt-4`}>
+                  <h4 className={`${sourceSansPro.className} text-sm md:text-md text-center md:text-start mt-4`}>
                     A Meditation App with Personal Wellness Tracking Applicability
                     Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and motivational quotes daily.
                   </h4>
@@ -77,10 +77,10 @@ export default function Page() {
               </Link>
             </div> */}
             <div className="project-block flex flex-col md:flex-row  my-20">
-              <Link className="flex flex-row justify-center" href="https://gushihiro.github.io/contacts-crud/"
+              <Link className="flex flex-col items-center md:flex-row justify-center" href="https://gushihiro.github.io/contacts-crud/"
                     target="_blank">
                 <img className="project-img self-center" src="/contactCrudSS.png" alt="project"/>
-                <div className={'flex flex-col w-4/12 md:pl-20'}>
+                <div className={'flex flex-col w-10/12 md:w-4/12 md:pl-20'}>
                   <h4 className={`${sourceCodePro.className} project-heading`}>Contacts-CRUD</h4>
                   <h4 className={`${sourceCodePro.className} project-sub-heading`}>
                     MySQL&nbsp;

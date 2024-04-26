@@ -74,7 +74,7 @@ body {
   display: flex;
   align-items: center;
   color: #9ABFEA;
-  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-size: clamp(.8rem, 4vw, 1.3rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal; 
@@ -169,7 +169,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   justify-content: center;
   text-align: center;
   width: 80vw;
@@ -229,7 +228,11 @@ body {
 
   .project-img {
     width: 80vw;
-    height: 35vh;
+    height: 25vh;
+  }
+
+  .project-sub-heading {
+    width: 95vw;
   }
 
   .project-sub-text {
@@ -247,6 +250,16 @@ body {
   .project-section {
     margin-top: 15vh;
   }
+
+  .project-block {
+    min-height: 30vh;
+    width: 95vw;
+  }
+
+  .project-heading {
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
