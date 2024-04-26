@@ -14,7 +14,7 @@ export default function Header() {
     }
 
     return (
-        <div className="mobile-nav flex items-center justify-start self-center px-8 md:hidden w-screen top-0 h-8 fixed z-10">
+        <div className="mobile-nav flex items-center justify-start self-center px-8 md:hidden w-screen top-0 h-12 fixed z-10">
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden ">
                     <div

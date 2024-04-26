@@ -28,7 +28,7 @@ export default function MainHero() {
   return (
     <div className="flex flex-col justify-center items-center main-hero">
       <Hamburger />
-      <motion.div className={'flex flex-col items-center w-10/12 mt-4'}>
+      <motion.div className={'flex flex-col items-center w-10/12 mt-8'}>
         <motion.div className={'flex flex-col text-start md:flex-row w-full'}>
           <motion.h1
               className={`${montserrat.className} text-6xl g-sub-heading`}
