@@ -9,7 +9,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="h-full overflow-x-hidden">
+      <body className="h-full">
         <div className="flex flex-row">
           {children}
         </div>
