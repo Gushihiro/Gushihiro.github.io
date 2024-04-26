@@ -29,7 +29,7 @@ export default function MainHero() {
     <div className="flex flex-col justify-center items-center main-hero">
       <Hamburger />
       <motion.div className={'flex flex-col items-center w-10/12 mt-8'}>
-        <motion.div className={'flex flex-col text-start md:flex-row w-full'}>
+        <motion.div className={'flex flex-col text-start w-full'}>
           <motion.h1
               className={`${montserrat.className} text-6xl g-sub-heading`}
               initial={{opacity: 0}}
@@ -66,8 +66,8 @@ export default function MainHero() {
             sizes="(max-width: 768px) 50vw, (max-width: 1280px) 50vw, 33vw"
             alt={"Hiroto"}
         />
-        <div className="inline-flex flex-col sm:w-full lg:w-6/12 justify-between">
-          <motion.div className="hero-text-box">
+        <div className="inline-flex flex-col sm:w-full lg:w-8/12 justify-between">
+          <motion.div className="hero-text-box self-end">
             <div className="md:w-10/12 self-center text-left md:self-end mt-9 md:text-right">
               Over 3 years of experience in Web Stacks involving Javascript, Typescript,
               React, & NodeJS. Experienced in AGILE team environments collaborating to deliver custom ecommerce platforms to automate online business management and transactions.
