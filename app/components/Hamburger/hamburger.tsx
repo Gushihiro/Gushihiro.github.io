@@ -18,7 +18,7 @@ export default function Header() {
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden ">
                     <div
-                        className="HAMBURGER-ICON space-y-2 fixed"
+                        className="HAMBURGER-ICON space-y-2 fixed z-1"
                         onClick={() => isOpen(!isNavOpen)}
                     >
                         <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -70,7 +70,7 @@ export default function Header() {
       .showMenuNav {
         display: block;
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         top: 0;
         left: 0;
