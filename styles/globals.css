@@ -18,8 +18,9 @@ body {
 }
 
 .custom-divider {
-  margin-top: 3vh;
-  margin-bottom: 4vh;
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 100%;
 }
 
 /*.hero-img {*/
@@ -44,6 +45,19 @@ body {
   line-height: 121px;
   white-space: nowrap;
   align-self: flex-end;
+  width: 100%;
+}
+
+.g-sub-heading {
+  color: #7ECB7C;
+  font-style: normal;
+  font-size: clamp(1rem, 4vw, 4rem);
+  line-height: 3vh;
+  white-space: nowrap;
+  align-self: flex-start;
+  justify-items: center;
+  width: 100%;
+  padding-top: 2vh;
 }
 
 .project-heading {
@@ -75,9 +89,15 @@ body {
 
 .sub-heading {
   font-style: normal;
-  font-size: clamp(1.5rem, 8vw, 4rem);
-  line-height: 50px;
+  font-size: clamp(1rem, 4vw, 4rem);
+  line-height: 3vh;
   color: #9ABFEA;
+  width: 100%;
+}
+
+.mobile-nav {
+  background-color: #1F2125;
+  opacity: 90%;
 }
 
 .nav-heading {
@@ -177,7 +197,7 @@ body {
   }
 
   .main-hero {
-    margin-top: 7vh;
+    margin-top: 1vh;
     text-align: center;
   }
 

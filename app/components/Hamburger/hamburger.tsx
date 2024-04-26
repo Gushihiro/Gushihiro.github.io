@@ -14,21 +14,21 @@ export default function Header() {
     }
 
     return (
-        <div className="flex items-center justify-start self-center py-8 px-8 md:hidden w-10/12">
+        <div className="mobile-nav flex items-center justify-start self-center px-8 md:hidden w-screen top-0 h-8 fixed z-10">
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden ">
                     <div
-                        className="HAMBURGER-ICON space-y-2 fixed z-1"
+                        className="HAMBURGER-ICON space-y-2 cursor-pointer"
                         onClick={() => isOpen(!isNavOpen)}
                     >
-                        <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                        <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                        <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                        <span className="block h-0.5 w-8 bg-yellow-200"></span>
+                        <span className="block h-0.5 w-8 bg-yellow-200"></span>
+                        <span className="block h-0.5 w-8 bg-yellow-200"></span>
                     </div>
 
-                    <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+                    <div className={isNavOpen ? "showMenuNav z-10" : "hideMenuNav"}>
                         <div
-                            className="absolute top-0 right-0 px-8 py-8"
+                            className="absolute top-0 right-0 px-8 py-8 cursor-pointer"
                             onClick={() => isOpen(false)}
                         >
                             <svg
