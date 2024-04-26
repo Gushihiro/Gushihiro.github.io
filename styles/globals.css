@@ -93,6 +93,7 @@ body {
   font-style: normal;
   font-size: clamp(1rem, 4vw, 2rem);
   line-height: 3vh;
+  margin-top: 1.5rem;
   color: #9ABFEA;
   width: 50%;
   align-self: flex-end;
@@ -219,6 +220,7 @@ body {
 
   .sub-heading {
     width: 100%;
+    margin-top: 0;
   }
 
   .main-hero {

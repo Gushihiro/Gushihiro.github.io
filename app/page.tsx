@@ -100,7 +100,7 @@ export default function Page() {
                     </svg>
                     &nbsp;NodeJS&nbsp;
                   </h4>
-                  <h4 className={`${sourceSansPro.className} text-sm text-center md:text-xl md:text-start mt-4`}>
+                  <h4 className={`${sourceSansPro.className} text-sm md:text-md text-center md:text-start mt-4`}>
                     Simple, fully functioning CRUD Application Utilizing Axios-Imported API Contacts
                     Track your mood, meditate using the animated breathing box, and receive new recipes, yoga poses, and
                     motivational quotes daily.
