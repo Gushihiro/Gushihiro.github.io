@@ -1,8 +1,8 @@
 'use client';
 import Link from "next/link";
 import MainHero from "./components/MainHero/mainHero"
-import { Source_Code_Pro, Source_Sans_Pro } from '@next/font/google'
-import { motion, useScroll, useInView } from "framer-motion";
+import { Source_Code_Pro, Source_Sans_Pro } from 'next/font/google'
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const sourceCodePro = Source_Code_Pro({
@@ -15,9 +15,9 @@ const sourceSansPro = Source_Sans_Pro({
   weight: ['400']
 })
 
-const circleSpacer = <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
-</svg> 
+// const circleSpacer = <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+// <circle cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 0)" fill="#9ABFEA"/>
+// </svg>
 
 export default function Page() {
   const ref = useRef(null);
@@ -117,7 +117,7 @@ export default function Page() {
       </motion.section>
       <a className="link-img" href="#home">
         <svg width="24" height="28" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11 6L6 1L1 6M11 13L6 8L1 13" stroke="#EDE490" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11 6L6 1L1 6M11 13L6 8L1 13" stroke="#EDE490" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </a>
     </div>
